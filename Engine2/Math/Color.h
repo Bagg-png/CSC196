@@ -1,5 +1,7 @@
 #pragma once
+#define NOMINMAX
 #include "core.h"
+#include <iostream>
 
 namespace nc {
 	struct Color {
@@ -13,6 +15,8 @@ namespace nc {
 			b = ((rgb >> 16) & 0xff) / 255.0f;	// 0 - 255
 		}
 
+		Color operator + (const Color& color) { return{r + color.r, g + color.g, b + color.b}; }
+		Color operator - (const Color& color) { return{r - color.r, g - color.g, b - color.b}; }
 		Color operator * (float s) const { return{ r * s,g * s,b * s }; }
 		operator DWORD() const { return ToRGB(); }
 		
@@ -23,6 +27,7 @@ namespace nc {
 
 			return (red | green << 8 | blue << 16);
 		}
+		friend std::istream& operator >> (std::istream& stream, Color& c);
 		static const Color white;
 		static const Color red;
 		static const Color green;

@@ -15,6 +15,15 @@
     <Filter Include="Source\Graphics">
       <UniqueIdentifier>{1ae65e0a-1344-4ad0-b851-349f8287747b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\Base">
+      <UniqueIdentifier>{b803d759-2a24-4f9b-8230-f700d38adeab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio">
+      <UniqueIdentifier>{c9acb9e2-541f-4fef-8c3e-70c9f8f04391}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Framework">
+      <UniqueIdentifier>{903473ca-046b-463a-ab38-0c96f5e0f500}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\Color.h">
@@ -27,6 +36,45 @@
       <Filter>Source\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Math\Random.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\MathUtils.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Transform.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\System.h">
+      <Filter>Source\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio\AudioSystem.h">
+      <Filter>Source\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Object.h">
+      <Filter>Source\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Actor.h">
+      <Filter>Source\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Base\Scene.h">
+      <Filter>Source\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\EventSystem.h">
+      <Filter>Source\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ResourceSystem.h">
+      <Filter>Source\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix22.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix33.h">
       <Filter>Source\Math</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,6 +92,27 @@
       <Filter>Source\Math</Filter>
     </ClCompile>
     <ClCompile Include="Math\Vector2.cpp">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio\AudioSystem.cpp">
+      <Filter>Source\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Actor.cpp">
+      <Filter>Source\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Base\Scene.cpp">
+      <Filter>Source\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\EventSystem.cpp">
+      <Filter>Source\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ResourceSystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Transform.cpp">
       <Filter>Source\Math</Filter>
     </ClCompile>
   </ItemGroup>
